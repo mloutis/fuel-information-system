@@ -1,0 +1,22 @@
+Microsoft(R) Server Maintenance Utility (Unicode) Version 16.0.1000
+Report generated on "DESKTOP-ABC1234".
+Maintenance Plan: BACKUPXDB
+Duration: 00:00:01
+Status: Operation completed successfully.
+Details:
+Back up Database Task (DESKTOP-ABC1234)
+Back up database on Local Server Connection
+Databases: XDB
+Type: Full
+Append to existing
+Task start time: 2025-07-08T14:40:02
+Task end time: 2025-07-08T14:40:03
+Success
+Command: EXECUTE master.dbo.xp_create_subdir N'D:\PFE\backup\XDB'
+
+GO
+BACKUP DATABASE [XDB] TO DISK = N'D:\PFE\backup\XDB\XDB_backup_2025_07_08_144002_9480724.bak' 
+WITH NOFORMAT, NOINIT, NAME = N'XDB_backup_2025_07_08_144002_9480724', 
+SKIP, REWIND, NOUNLOAD, COMPRESSION, STATS = 10
+
+GO
